@@ -1,1 +1,5 @@
-# parallel_spherematch
+## Parallel Spherematch
+
+![screenshot from 2019-01-13 20-52-25](https://user-images.githubusercontent.com/13570487/51099472-fc6a9780-1774-11e9-90b4-68edbdac8938.png)
+
+k-d trees are useful data structures to store multidimensional points in such a way to preserve the relative position of the data points. Using this structure, we find all possible pairs of data points, distributed on a sphere, that are within a particular angular separation. We use the Astrometry.net spherematch package which is originally developed in C with a Python interface for astronomers. We introduce new functions in the level of Python-C extension of the package that enables us to use the power of OpenMP. We find that however adding more threads increases the efficiency of spherematch, the total run-time is dominated by other operations that need to be done in Python. Therefore, we implement the other intensive operations in C where we can also use OpenMP. This together with breaking the entire job into several smaller sub-tasks help of to reduce the run-time of individual sub-tasks, and therefore the total queue waiting time, that can dominate the total run-time.
