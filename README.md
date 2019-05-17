@@ -28,6 +28,11 @@ All other auxiliary Python codes to run tests and measure the performance:
 
 Plotting the results: 
 4) test1.plot.py  
+
+
+- - - -
+ * Copyright 2015
+ * Author: Ehsan Kourkchi <ekourkchi@gmail.com>
 5) test2.plot.desktop.py 
 
 ****************************************************************
