@@ -30,4 +30,8 @@ Plotting the results:
 4) test1.plot.py  
 5) test2.plot.desktop.py 
 
-****************************************************************
+- - - -
+ * Copyright 2015
+ * Author: Ehsan Kourkchi <ekourkchi@gmail.com>
+
+
